@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tofi">
         <activity
+            android:name=".Lectura"
+            android:exported="false" />
+      <activity
             android:name=".AudioLectura"
             android:exported="false" />
         <activity
