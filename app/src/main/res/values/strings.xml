@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Tofi</string>
+
+    <string name="user">Usuario</string>
+    <string name="pass">Contrasena</string>
+
+    <string name="btnInicio">Iniciar sesion</string>
+    <string name="btnRegistro">Registrarse</string>
+    <string name="btnChecar">Checar</string>
+    <string name="btnUsuario">Usuario</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnListo">Listo</string>
+    <string name="btnReestablecer">Reestablecer</string>
+    <string name="txtPerfiles">Perfiles</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="strRecordarUser">Recordar Usuario</string>
+    <string name="strEmail">Correo electronico</string>
+    <string name="repeatPass">Repetir contrasena</string>
+
 </resources>
