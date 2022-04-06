@@ -24,7 +24,7 @@
         android:layout_weight="10">
 
         <ImageView
-            android:id="@+id/img_lectura"
+            android:id="@+id/img_cuento"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:src="@drawable/portadaclick" />
@@ -103,8 +103,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-
+    
 </LinearLayout>
