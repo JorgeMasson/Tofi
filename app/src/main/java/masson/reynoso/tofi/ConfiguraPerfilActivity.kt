@@ -5,18 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-
-public class MainActivity : AppCompatActivity() {
-
-
+class ConfiguraPerfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_configura_perfil)
 
-        val boton1 = findViewById<Button>(R.id.btnPrueba)
 
-        boton1.setOnClickListener{
-            val lanzar = Intent(this, LoginActivity:: class.java)
+        val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
+
+        btnSiguiente.setOnClickListener{
+            val lanzar = Intent(this, BienvenidaActivity:: class.java)
             startActivity(lanzar)
         }
     }

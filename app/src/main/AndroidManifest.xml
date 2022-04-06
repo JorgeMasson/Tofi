@@ -32,6 +32,30 @@
             android:exported="false" />
       
         <activity
+            android:name=".PerfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BienvenidaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfiguraPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateaccActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecoveryPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
