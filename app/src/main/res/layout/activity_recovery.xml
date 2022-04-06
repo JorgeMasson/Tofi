@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    tools:context=".RecoveryActivity">
+
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="¿Perdiste tu contrasena?"/>
+
+    <TextView
+        android:id="@+id/txtTwo"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="No te preocupes, escribre tu usuario para recuperarla!"
+        />
+
+    <EditText
+        android:id="@+id/inputUsuarioRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/user"
+        android:layout_gravity="center"
+        android:layout_marginVertical="80dp"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnChecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_gravity="center|top"
+        android:text="@string/btnChecar"
+         />
+
+</LinearLayout>
