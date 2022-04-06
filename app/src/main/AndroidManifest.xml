@@ -8,14 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Tofi"
-        >
+        android:theme="@style/Theme.Tofi">
 
         <activity
             android:name=".Inicio"
             android:exported="false"
-            android:label="@string/title_activity_inicio"
-        />
+            android:label="@string/title_activity_inicio"/>
 
         <activity
             android:name=".MainActivity"
