@@ -5,18 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-
-public class MainActivity : AppCompatActivity() {
-
-
+class RecoveryPassActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_recoverypass)
 
-        val boton1 = findViewById<Button>(R.id.btnPrueba)
+        val btnReestablecer = findViewById<Button>(R.id.btnReestablecer)
 
-        boton1.setOnClickListener{
-            val lanzar = Intent(this, LoginActivity:: class.java)
+        btnReestablecer.setOnClickListener{
+            val lanzar = Intent(this, ProfilesActivity:: class.java)
             startActivity(lanzar)
         }
     }
