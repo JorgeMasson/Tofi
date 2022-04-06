@@ -12,6 +12,9 @@
         <activity
             android:name=".Lectura"
             android:exported="false" />
+      <activity
+            android:name=".AudioLectura"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
