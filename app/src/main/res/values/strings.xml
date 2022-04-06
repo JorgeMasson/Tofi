@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Tofi</string>
 
+
     <string name="user">Usuario</string>
     <string name="pass">Contrasena</string>
 
@@ -16,5 +17,13 @@
     <string name="strRecordarUser">Recordar Usuario</string>
     <string name="strEmail">Correo electronico</string>
     <string name="repeatPass">Repetir contrasena</string>
+
+
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_Inicio">Inicio</string>
+    <string name="title_Biblioteca">Biblioteca</string>
+    <string name="title_Buscar">Buscar</string>
+    <string name="title_Actvidades">Actividades</string>
+    <string name="title_Perfil">Perfil</string>
 
 </resources>

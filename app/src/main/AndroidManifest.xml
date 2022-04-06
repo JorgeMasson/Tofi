@@ -9,6 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tofi">
+      
+        <activity
+            android:name=".InfoCuento"
+            android:exported="false" />
+
+        <activity
+            android:name=".Inicio"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"/>
+
+        <activity
+            android:name=".LecturaTerminada"
+            android:exported="false" />
+
+        <activity
+            android:name=".Lectura"
+            android:exported="false" />
+        
+        <activity
+            android:name=".AudioLectura"
+            android:exported="false" />
+      
         <activity
             android:name=".PerfilesActivity"
             android:exported="false" />
