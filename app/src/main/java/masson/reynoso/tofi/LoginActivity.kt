@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnRegistro.setOnClickListener{
-            val lanzar = Intent(this, ConfiguraPerfilActivity:: class.java)
+            val lanzar = Intent(this, CreateaccActivity:: class.java)
             startActivity(lanzar)
         }
 
