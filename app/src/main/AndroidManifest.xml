@@ -16,6 +16,18 @@
             android:label="@string/title_activity_inicio"/>
 
         <activity
+            android:name=".LecturaTerminada"
+            android:exported="false" />
+
+        <activity
+            android:name=".Lectura"
+            android:exported="false" />
+        
+        <activity
+            android:name=".AudioLectura"
+            android:exported="false" />
+      
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
