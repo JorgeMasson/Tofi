@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tofi</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_Inicio">Inicio</string>
+    <string name="title_Biblioteca">Biblioteca</string>
+    <string name="title_Buscar">Buscar</string>
+    <string name="title_Actvidades">Actividades</string>
+    <string name="title_Perfil">Perfil</string>
 </resources>
