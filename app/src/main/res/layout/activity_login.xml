@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/inputUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/user" />
+
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txtOlvidaPass"
+        android:layout_width="167dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="230dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickTextView"
+        android:text="¿Olvidaste tu contrasena?"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass" />
+
+    <RadioButton
+        android:id="@+id/btnRecordarUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:text="Recordar usuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtOlvidaPass" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_boton_green_redondo"
+        android:hint="@string/btnInicio"
+        />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borde_boton_redondo"
+        android:hint="@string/btnRegistro" />
+    </LinearLayout>
