@@ -3,6 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/rectangulo_redondeado_verde.xml" value="0.1825" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_felicidades.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/rectangulo_redondeado_verde.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/amarillo_redondeado.xml" value="0.167" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/cuadro_redondo_azul_claro.xml" value="0.167" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/round_button.xml" value="0.167" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/drawable/verde_redondeado.xml" value="0.167" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_audio_lectura.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_info_cuento.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_lectura.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_lectura_terminada.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
+        <entry key="..\:/Users/j_mas/AndroidStudioProjects/Tofi/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.124" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/drawable/bg_boton_green_redondo.xml" value="0.3635" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/drawable/bg_color.xml" value="0.3635" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/drawable/borde_boton_redondo.xml" value="0.3635" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/drawable/borde_redondo.xml" value="0.3635" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_bienvenida.xml" value="0.3625" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_configura_perfil.xml" value="0.33" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_createacc.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_login2.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_profiles.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_recovery.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_recovery2.xml" value="0.3342391304347826" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_recovery_pass.xml" value="0.3342391304347826" />
+        <entry key="..\:/Users/Rene Hernandez/Desktop/Tofi/app/src/main/res/layout/activity_recoverypass.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sexto semestre/APLICACIONES WEB/Tofi/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.246" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sexto semestre/APLICACIONES WEB/Tofi/app/src/main/res/drawable/perfil.xml" value="0.2765" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sexto semestre/APLICACIONES WEB/Tofi/app/src/main/res/drawable/portada.xml" value="0.1725" />
@@ -27,6 +58,12 @@
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sexto semestre/APLICACIONES WEB/Tofi/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1395" />
       </map>
     </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
