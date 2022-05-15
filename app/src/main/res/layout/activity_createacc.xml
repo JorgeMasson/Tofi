@@ -13,7 +13,7 @@
         android:layout_width="27dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         app:srcCompat="@drawable/regresar" />
 
@@ -33,14 +33,14 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/user"
         android:background="@drawable/borde_redondo" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/inputEmailCrea"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -51,7 +51,7 @@
         android:background="@drawable/borde_redondo" />
 
     <EditText
-        android:id="@+id/inputPass"
+        android:id="@+id/inputPassCrea"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -62,7 +62,7 @@
         android:background="@drawable/borde_redondo"/>
 
     <EditText
-        android:id="@+id/inputPass2"
+        android:id="@+id/inputPassCrea2"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -85,7 +85,7 @@
         android:text="@string/strRecordarUser" />
 
     <Button
-        android:id="@+id/btnRegistrar"
+        android:id="@+id/btnRegistrarCrea"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:textStyle="bold"

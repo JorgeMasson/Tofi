@@ -27,4 +27,7 @@
     <string name="title_Actvidades">Actividades</string>
     <string name="title_Perfil">Perfil</string>
 
+    <string name = "checkbox">masson.reynoso.tofi.checkbox</string>
+    <string name = "name">masson.reynoso.tofi.name</string>
+
 </resources>
