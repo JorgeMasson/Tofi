@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    tools:context=".RecoveryActivity">
+
+
+    <ImageButton
+        android:id="@+id/ibRegresar"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/regresar" />
+
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="¿Perdiste tu \n contrasena?"
+        android:fontFamily="@font/nunito_extrablod"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtTwo"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginHorizontal="35dp"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="15dp"
+        android:text="No te preocupes, Escribre tu usuario para recuperarla!"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/inputUsuarioRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/user"
+        android:layout_gravity="center"
+        android:layout_marginVertical="80dp"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnChecar"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center|top"
+        android:textStyle="bold"
+        android:backgroundTint="#8881C9"
+        android:text="@string/btnChecar"
+        app:cornerRadius="10dp"
+         />
+
+
+
+</LinearLayout>

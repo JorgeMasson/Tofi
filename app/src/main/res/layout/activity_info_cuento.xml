@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoCuento">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_info_cuento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/click"
+            />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/verde_redondeado"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="140dp"
+            android:src="@drawable/play"
+            />
+
+        <ImageView
+            android:id="@+id/img_fav"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/amarillo_redondeado"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/fav"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_titulo_cuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="40dp"
+        android:text="Click"
+        />
+
+    <TextView
+        android:id="@+id/tv_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:text="Kayla Miller"
+        />
+
+    <TextView
+        android:id="@+id/tv_numero_paginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:text="192 páginas"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/grid_tags"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_descripción_cuento"
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:text="Descripción del cuento" />
+
+</LinearLayout>

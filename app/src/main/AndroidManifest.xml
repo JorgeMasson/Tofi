@@ -9,6 +9,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tofi">
+
+        <activity
+            android:name=".Configuracion"
+            android:exported="false" />
+      
+        <activity
+            android:name=".InfoCuento"
+            android:exported="false" />
+
+        <activity
+            android:name=".Inicio"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"/>
+
+        <activity
+            android:name=".LecturaTerminada"
+            android:exported="false" />
+
+        <activity
+            android:name=".Lectura"
+            android:exported="false" />
+        
+        <activity
+            android:name=".AudioLectura"
+            android:exported="false" />
+
+        <activity
+            android:name=".BienvenidaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfiguraPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateaccActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecoveryPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Felicidades"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
