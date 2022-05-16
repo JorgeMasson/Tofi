@@ -9,39 +9,43 @@
 
 
     <TextView
-        android:id="@+id/text_perfiles"
+        android:id="@+id/text_actividades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Perfiles"
         android:fontFamily="@font/nunito_extrablod"
-        android:textSize="30sp"
+        android:textColor="@color/moradoOscuro"
+        android:textSize="28sp"
+        android:background="@color/white"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="30dp"
         />
 
     <View
-        android:id="@+id/divisor"
+        android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="15dp"
         android:layout_marginTop="10dp"
-        android:background="?android:attr/listDivider"/>
+        android:background="@drawable/divisor"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="100dp">
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
 
         <GridView
+            android:id="@+id/grid_perfiles"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/gridView"
-            android:numColumns="2"/>
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:numColumns="2" />
+
+    </LinearLayout>
 
 
-
-</LinearLayout>
 
 </LinearLayout>

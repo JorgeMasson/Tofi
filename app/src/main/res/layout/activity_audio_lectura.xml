@@ -9,13 +9,12 @@
     tools:context=".AudioLectura">
 
     <ImageView
-        android:id="@+id/icon_back"
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:layout_margin="20dp"
-        android:src="@drawable/ic_baseline_arrow_back_ios_24"
-
+        android:src="@drawable/regresar"
         />
 
     <RelativeLayout
@@ -33,10 +32,10 @@
             android:id="@+id/tv_lectura"
             android:layout_width="250dp"
             android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/cuadro_redondo_azul_claro"
             android:padding="20dp"
             android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
