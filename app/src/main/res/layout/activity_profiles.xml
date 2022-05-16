@@ -9,32 +9,43 @@
 
 
     <TextView
-        android:id="@+id/text_perfiles"
+        android:id="@+id/text_actividades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Perfiles"
-        android:textSize="30sp"
+        android:fontFamily="@font/nunito_extrablod"
+        android:textColor="@color/moradoOscuro"
+        android:textSize="28sp"
+        android:background="@color/white"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="30dp"
         />
 
     <View
-        android:id="@+id/divisor"
+        android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="15dp"
         android:layout_marginTop="10dp"
-        android:background="?android:attr/listDivider"/>
+        android:background="@drawable/divisor"/>
 
-    <GridView
-        android:id="@+id/grid_perfiles"
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginVertical="200dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:numColumns="2" />
+        <GridView
+            android:id="@+id/grid_perfiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:numColumns="2" />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

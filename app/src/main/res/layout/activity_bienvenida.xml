@@ -6,18 +6,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".BienvenidaActivity"
-android:background="@drawable/bg_color">
+    android:background="@drawable/bg_color">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/regresar"
+        />
 
     <TextView
         android:id="@+id/text_bienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="30dp"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:fontFamily="@font/nunito_extrablod"
+        android:textSize="30sp"
         android:textColor="@color/white"
-        android:text="Bienvenido" />
+        android:text="¡Bienvenido!" />
 
     <TextView
         android:id="@+id/text_elige"
@@ -26,30 +36,38 @@ android:background="@drawable/bg_color">
         android:layout_marginStart="35dp"
         android:layout_marginTop="15dp"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunito_semiblod"
         android:textColor="@color/white"
-        android:text="Elige tus temas favoritos!" />
+        android:text="Elige tus temas favoritos" />
 
     <GridView
         android:id="@+id/grid_historias"
         android:layout_width="wrap_content"
-        android:layout_height="350dp"
+        android:layout_height="500dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="30dp"
         android:numColumns="2" />
-    <View
-        android:id="@+id/divisor"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="35dp"
-        android:background="?android:attr/listDivider"/>
 
-    <Button
-        android:id="@+id/btnListo"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:layout_marginVertical="40dp"
-        android:layout_gravity="center"
-        android:text="@string/btnListo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_color">
+
+        <Button
+            android:id="@+id/btnListo"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="40dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:background="@drawable/botonverde"
+            android:text="@string/btnListo"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
 </LinearLayout>

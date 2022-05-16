@@ -24,14 +24,14 @@
             android:textColor="@color/moradoOscuro"
             android:textSize="30sp" />
 
-        <Button
+        <ImageView
+            android:id="@+id/btnConfig"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginTop="76dp"
-            android:background="@drawable/configmorado"
-            android:layout_marginLeft="50dp"
-        />
-
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="83dp"
+            android:src="@drawable/configmorado"
+            />
 
     </LinearLayout>
 
@@ -44,7 +44,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="591dp"
+        android:layout_height="match_parent"
         android:background="@drawable/fondo"
         android:orientation="vertical">
 
@@ -75,6 +75,7 @@
                 android:layout_width="135dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
+
                 android:layout_marginLeft="30dp"
 
                />
