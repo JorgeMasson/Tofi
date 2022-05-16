@@ -3,7 +3,8 @@
 
 
     <string name="user">Usuario</string>
-    <string name="pass">Contrasena</string>
+    <string name="pass">Contraseña</string>
+    <string name="passNew">Nueva contraseña</string>
 
     <string name="btnInicio">Iniciar sesion</string>
     <string name="btnRegistro">Registrarse</string>
@@ -11,12 +12,12 @@
     <string name="btnUsuario">Usuario</string>
     <string name="btnSiguiente">Siguiente</string>
     <string name="btnListo">Listo</string>
-    <string name="btnReestablecer">Reestablecer</string>
+    <string name="btnRestablecer">Restablecer</string>
     <string name="txtPerfiles">Perfiles</string>
     <string name="txtNombre">Nombre</string>
     <string name="strRecordarUser">Recordar Usuario</string>
     <string name="strEmail">Correo electronico</string>
-    <string name="repeatPass">Repetir contrasena</string>
+    <string name="repeatPass">Repetir contraseña</string>
 
 
     <string name="title_activity_inicio">Inicio</string>
@@ -25,5 +26,8 @@
     <string name="title_Buscar">Buscar</string>
     <string name="title_Actvidades">Actividades</string>
     <string name="title_Perfil">Perfil</string>
+
+    <string name = "checkbox">masson.reynoso.tofi.checkbox</string>
+    <string name = "name">masson.reynoso.tofi.name</string>
 
 </resources>
