@@ -34,7 +34,10 @@
         <activity
             android:name=".AudioLectura"
             android:exported="false" />
-
+      
+        <activity
+            android:name=".PerfilesActivity"
+            android:exported="false" />
         <activity
             android:name=".BienvenidaActivity"
             android:exported="false" />

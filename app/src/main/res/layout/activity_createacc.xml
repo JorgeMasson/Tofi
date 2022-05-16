@@ -8,93 +8,92 @@
     android:background="@drawable/bg_color"
     tools:context=".CreateaccActivity">
 
-    <ImageButton
-        android:id="@+id/ibRegresar"
-        android:layout_width="27dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="50dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        app:srcCompat="@drawable/regresar" />
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/regresar"
+        />
 
     <TextView
-        android:id="@+id/text_crea"
+        android:id="@+id/text_config"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:textStyle="bold"
-        android:textSize="25sp"
+        android:text="Crea tu cuenta"
+        android:fontFamily="@font/nunito_extrablod"
         android:textColor="@color/white"
-        android:text="Crea tu cuenta" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/inputUser"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:id="@+id/txtNombre"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/user"
-        android:background="@drawable/borde_redondo" />
+        android:background="@drawable/categoria"
+        android:hint="    Usuario"
+        android:fontFamily="@font/nunito_blod"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/inputEmailCrea"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/strEmail"
-        android:background="@drawable/borde_redondo" />
+        android:background="@drawable/categoria"
+        android:hint="    Correo electronico"
+        android:fontFamily="@font/nunito_blod"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/inputPassCrea"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:id="@+id/txtContraseña"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/passNew"
-        android:background="@drawable/borde_redondo"/>
+        android:background="@drawable/categoria"
+        android:hint="    Contraseña"
+        android:fontFamily="@font/nunito_blod"
+        android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/inputPassCrea2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:id="@+id/txtConfirmar"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/repeatPass"
-        android:background="@drawable/borde_redondo"/>
+        android:background="@drawable/categoria"
+        android:hint="    Confirmar contraseña"
+        android:fontFamily="@font/nunito_blod"
+        android:inputType="textPassword" />
 
     <CheckBox
         android:id="@+id/btnRecordarUser"
-        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="230dp"
-        android:buttonTint="@color/white"
-        android:layoutDirection="rtl"
-        android:text="Recordar usuario"
-        android:textAlignment="textStart"
-
+        android:fontFamily="@font/nunito_blod"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/txtOlvidaPass" />
+        android:text="@string/strRecordarUser" />
 
     <Button
-        android:id="@+id/btnRegistrarCrea"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:textStyle="bold"
-        android:backgroundTint="#8881C9"
-        app:cornerRadius="10dp"
+        android:id="@+id/btnRegistro"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginVertical="10dp"
-        android:text="@string/btnRegistro"/>
+        android:layout_marginTop="40dp"
+        android:text="@string/btnRegistro"
+        android:fontFamily="@font/nunito_extrablod"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@drawable/botonmorado"
+        app:backgroundTint="@null"
+        />
 
 </LinearLayout>
