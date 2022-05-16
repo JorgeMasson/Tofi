@@ -8,20 +8,11 @@
     android:background="@drawable/bg_color"
     tools:context=".RecoveryPassActivity">
 
-    <ImageButton
-        android:id="@+id/ibRegresar"
-        android:layout_width="27dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="70dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        app:srcCompat="@drawable/regresar" />
-
     <TextView
         android:id="@+id/text_hola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="76dp"
         android:layout_marginLeft="20dp"
         android:textStyle="bold"
         android:textSize="25sp"
@@ -32,11 +23,11 @@
     <EditText
         android:id="@+id/inputPass"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="176dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="@string/passNew"
+        android:hint="@string/pass"
         android:layout_gravity="center"
         android:layout_marginVertical="30dp"
         android:background="@drawable/borde_redondo"
@@ -45,7 +36,7 @@
     <EditText
         android:id="@+id/inputPass2"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:background="@drawable/borde_redondo"
         android:ems="10"
@@ -55,12 +46,9 @@
     <Button
         android:id="@+id/btnReestablecer"
         android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="280dp"
-        android:textStyle="bold"
-        android:backgroundTint="#8881C9"
-        android:text="@string/btnRestablecer"
-        app:cornerRadius="10dp"/>
+        android:text="@string/btnReestablecer" />
 
 </LinearLayout>

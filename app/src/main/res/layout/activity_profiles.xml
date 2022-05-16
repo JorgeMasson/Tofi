@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Perfiles"
-        android:fontFamily="@font/nunito_extrablod"
         android:textSize="30sp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="80dp"
@@ -27,21 +26,15 @@
         android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider"/>
 
-    <LinearLayout
+    <GridView
+        android:id="@+id/grid_perfiles"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="100dp">
+        android:layout_height="140dp"
+        android:layout_marginVertical="200dp"
 
-        <GridView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/gridView"
-            android:numColumns="2"/>
-
-
-
-</LinearLayout>
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:numColumns="2" />
 
 </LinearLayout>

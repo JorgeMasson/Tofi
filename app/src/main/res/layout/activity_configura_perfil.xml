@@ -8,16 +8,6 @@
     android:orientation="vertical"
     android:background="@drawable/bg_color">
 
-
-    <ImageButton
-        android:id="@+id/ibRegresar"
-        android:layout_width="27dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="50dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        app:srcCompat="@drawable/regresar" />
-
     <TextView
         android:id="@+id/text_config"
         android:layout_width="wrap_content"
@@ -25,42 +15,23 @@
         android:text="Configura tu perfil"
         android:textColor="@color/white"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="90dp"
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@android:color/white"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp">
+        android:layout_height="257dp"
+        android:layout_marginVertical="30dp">
 
-
-        <ImageButton
-            android:id="@+id/felchaIzq"
-            android:layout_width="27dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:srcCompat="@drawable/flecha2" />
-
-        <ImageButton
-            android:id="@+id/felchaDer"
-            android:layout_width="27dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="66dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:srcCompat="@drawable/flecha" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/editTextPersonName"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginVertical="2dp"
         android:background="@drawable/borde_redondo"
         android:hint="@string/txtNombre"
         android:inputType="textPersonName" />
@@ -70,52 +41,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/white"
-        android:textSize="25dp"
         android:text="Edad" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="-5dp">
+        android:layout_marginTop="30dp">
 
-        <ImageButton
+        <Button
             android:id="@+id/btnDecrement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:srcCompat="@drawable/menos" />
+            android:layout_marginLeft="110dp"
+            android:text="-" />
 
         <TextView
-            android:id="@+id/increment_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:layout_marginLeft="10dp"
-            android:textSize="30sp" />
+        android:id="@+id/increment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp" />
 
-        <ImageButton
-            android:id="@+id/btnIncrement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:srcCompat="@drawable/mas" />
-
+        <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="+" />
     </LinearLayout>
-
     <Button
         android:id="@+id/btnSiguiente"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:textStyle="bold"
-        android:backgroundTint="#8881C9"
-        app:cornerRadius="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
+        android:layout_marginVertical="30dp"
         android:text="@string/btnSiguiente" />
 </LinearLayout>
