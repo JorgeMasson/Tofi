@@ -8,85 +8,63 @@
     android:background="@drawable/bg_color"
     tools:context=".LoginActivity">
 
-
-    <ImageView
+    <EditText
+        android:id="@+id/inputUsuario"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="90dp"
-        android:src="@drawable/tofi_logo"
-        />
+        android:layout_height="40dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/user" />
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="70dp"
+        android:id="@+id/inputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Usuario"
-        android:fontFamily="@font/nunito_blod"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/txtContraseña"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Contraseña"
-        android:fontFamily="@font/nunito_blod"
+        android:layout_marginTop="100dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/pass"
         android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/txtOlvidaPass"
-        android:layout_width="wrap_content"
+        android:layout_width="167dp"
         android:layout_height="27dp"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="160dp"
+        android:layout_marginLeft="230dp"
+        android:clickable="true"
         android:gravity="center"
-        android:fontFamily="@font/nunito_blod"
+        android:onClick="clickTextView"
         android:text="¿Olvidaste tu contrasena?"
-        android:textColor="#F6ECC8"
         app:layout_constraintTop_toBottomOf="@+id/inputPass" />
 
-    <CheckBox
+    <RadioButton
         android:id="@+id/btnRecordarUser"
         android:layout_width="match_parent"
-        android:layout_marginLeft="185dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_blod"
-        android:textColor="@color/white"
-        android:text="@string/strRecordarUser" />
+        android:layout_marginLeft="250dp"
+        android:text="Recordar usuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtOlvidaPass" />
 
     <Button
         android:id="@+id/btnInicio"
         android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:fontFamily="@font/nunito_extrablod"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:background="@drawable/botonverde"
-        app:backgroundTint="@null"
-        android:text="@string/btnInicio"
+        android:background="@drawable/bg_boton_green_redondo"
+        android:hint="@string/btnInicio"
         />
 
     <Button
         android:id="@+id/btnRegistro"
         android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/nunito_extrablod"
-        android:text="@string/btnRegistro"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:background="@drawable/botonmorado"
-        app:backgroundTint="@null"/>
-
-
-
+        android:background="@drawable/borde_boton_redondo"
+        android:hint="@string/btnRegistro" />
     </LinearLayout>

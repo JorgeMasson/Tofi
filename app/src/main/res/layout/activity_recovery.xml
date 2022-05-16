@@ -8,24 +8,13 @@
     android:background="@drawable/bg_color"
     tools:context=".RecoveryActivity">
 
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/regresar"
-        />
-
     <TextView
+        android:id="@+id/txtOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Perdiste tu \n contrasena?"
-        android:fontFamily="@font/nunito_extrablod"
-        android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:textSize="25sp" />
+        android:layout_marginTop="116dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="¿Perdiste tu contrasena?"/>
 
     <TextView
         android:id="@+id/txtTwo"
@@ -33,35 +22,30 @@
         android:layout_height="43dp"
         android:layout_marginTop="12dp"
         android:layout_marginLeft="30dp"
-        android:fontFamily="@font/nunito_blod"
-        android:textColor="@color/white"
         android:layout_marginHorizontal="35dp"
-        android:text="¡No te preocupes! Escribe tu usuario para recuperarla"
+        android:text="No te preocupes, escribre tu usuario para recuperarla!"
         />
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="70dp"
+        android:id="@+id/inputUsuarioRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/user"
         android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Usuario"
-        android:fontFamily="@font/nunito_blod"
-        android:inputType="textPersonName" />
+        android:layout_marginVertical="80dp"
+        android:inputType="textPersonName"
+        />
 
     <Button
         android:id="@+id/btnChecar"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_gravity="center|top"
         android:text="@string/btnChecar"
-        android:fontFamily="@font/nunito_extrablod"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:background="@drawable/botonmorado"
-        app:backgroundTint="@null"
-        />
+         />
 
 </LinearLayout>

@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg_color"
+
     tools:context=".MainActivity">
 
 
-    <ImageView
+    <Button
         android:id="@+id/btnPrueba"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="170dp"
-        android:src="@drawable/tofi_logo"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:layout_gravity="center"
+        android:text="Button"/>
 
 </LinearLayout>

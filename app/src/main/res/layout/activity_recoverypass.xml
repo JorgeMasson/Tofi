@@ -8,57 +8,47 @@
     android:background="@drawable/bg_color"
     tools:context=".RecoveryPassActivity">
 
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/regresar"
-        />
-
     <TextView
+        android:id="@+id/text_hola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Hola, Hannah23!"
-        android:fontFamily="@font/nunito_extrablod"
+        android:layout_marginTop="76dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:textSize="25sp" />
+        android:layout_marginHorizontal="45dp"
+        android:text="Hola, Rene24!"/>
 
     <EditText
-        android:id="@+id/txtContraseña"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="70dp"
+        android:id="@+id/inputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/pass"
         android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Nueva contraseña"
-        android:fontFamily="@font/nunito_blod"
-        android:inputType="textPassword" />
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/borde_redondo"
+        />
 
     <EditText
-        android:id="@+id/txtConfirmar"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/inputPass2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Repetir contraseña"
-        android:fontFamily="@font/nunito_blod"
-        android:inputType="textPassword" />
+        android:background="@drawable/borde_redondo"
+        android:ems="10"
+        android:hint="@string/repeatPass"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btnReestablecer"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="280dp"
-        android:text="@string/btnReestablecer"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:background="@drawable/botonmorado"
-        app:backgroundTint="@null"/>
+        android:text="@string/btnReestablecer" />
 
 </LinearLayout>

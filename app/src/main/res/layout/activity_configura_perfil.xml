@@ -8,133 +8,73 @@
     android:orientation="vertical"
     android:background="@drawable/bg_color">
 
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/regresar"
-        />
-
     <TextView
         android:id="@+id/text_config"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Configura tu perfil"
-        android:fontFamily="@font/nunito_extrablod"
         android:textColor="@color/white"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:textSize="25sp" />
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="257dp"
-        android:orientation="horizontal"
-        android:layout_marginVertical="30dp"
-        android:background="@drawable/fondo">
+        android:layout_marginVertical="30dp">
 
-        <ImageView
-            android:id="@+id/btnIzquierdo"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginLeft="10dp"
-           android:layout_gravity="center"
-            android:src="@drawable/regresar_morado" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="70dp"
-            android:src="@drawable/perfil" />
-
-        <ImageView
-            android:id="@+id/btnDerecho"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginLeft="65dp"
-            android:layout_gravity="center"
-            android:src="@drawable/regresar_derecho" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/editTextPersonName"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:background="@drawable/categoria"
-        android:hint="    Nombre"
-        android:fontFamily="@font/nunito_blod"
+        android:layout_marginVertical="2dp"
+        android:background="@drawable/borde_redondo"
+        android:hint="@string/txtNombre"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/text_edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"
-        android:text="Edad"
-        android:textSize="18dp"
-        android:fontFamily="@font/nunito_regular"
-        android:textColor="@color/white" />
+        android:layout_marginLeft="40dp"
+        android:text="Edad" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="30dp">
 
-        <ImageView
+        <Button
             android:id="@+id/btnDecrement"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="140dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/menos"
-            />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:text="-" />
 
         <TextView
-            android:id="@+id/increment_text"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/categoria"
-            android:text="0"
-            android:fontFamily="@font/nunito_blod"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+        android:id="@+id/increment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/btnIncrement"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:src="@drawable/mas"
-            />
-
-
+        <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="+" />
     </LinearLayout>
-
     <Button
         android:id="@+id/btnSiguiente"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
         android:layout_marginVertical="30dp"
-        android:text="@string/btnSiguiente"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:background="@drawable/botonmorado"
-        app:backgroundTint="@null"
-
-        />
+        android:text="@string/btnSiguiente" />
 </LinearLayout>
