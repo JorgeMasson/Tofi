@@ -39,6 +39,5 @@ public class MainActivity : AppCompatActivity() {
 
         val addProfile = arrayOf("Agregar Perfil")
         val addPerfilImages = intArrayOf(R.drawable.agregarperfil)
-
     }
 }

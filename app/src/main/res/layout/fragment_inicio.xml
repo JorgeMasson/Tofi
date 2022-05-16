@@ -13,26 +13,35 @@
         android:layout_height="wrap_content"
         android:text="Catálogo"
         android:textSize="30sp"
+        android:textColor="@color/moradoOscuro"
+        android:fontFamily="@font/nunito_extrablod"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="30dp"
-       />
+        />
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="15dp"
         android:layout_marginTop="10dp"
-        android:background="?android:attr/listDivider"/>
+        android:background="@drawable/divisor"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="591dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
 
     <GridView
         android:id="@+id/grid_catalogo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="547dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:numColumns="2" />
+
+    </LinearLayout>
 
 </LinearLayout>

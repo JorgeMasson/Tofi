@@ -72,17 +72,19 @@
         android:hint="@string/repeatPass"
         android:background="@drawable/borde_redondo"/>
 
-    <RadioButton
-        android:id="@+id/rbRecordarUser"
+    <CheckBox
+        android:id="@+id/btnRecordarUser"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="45dp"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:layoutDirection="rtl"
+        android:layout_marginLeft="230dp"
         android:buttonTint="@color/white"
-        android:text="@string/strRecordarUser" />
+        android:layoutDirection="rtl"
+        android:text="Recordar usuario"
+        android:textAlignment="textStart"
+
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txtOlvidaPass" />
 
     <Button
         android:id="@+id/btnRegistrarCrea"
