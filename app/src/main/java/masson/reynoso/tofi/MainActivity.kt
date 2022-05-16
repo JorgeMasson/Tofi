@@ -20,6 +20,7 @@ public class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+
         Handler().postDelayed({
             val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
@@ -39,5 +40,6 @@ public class MainActivity : AppCompatActivity() {
 
         val addProfile = arrayOf("Agregar Perfil")
         val addPerfilImages = intArrayOf(R.drawable.agregarperfil)
+
     }
 }
