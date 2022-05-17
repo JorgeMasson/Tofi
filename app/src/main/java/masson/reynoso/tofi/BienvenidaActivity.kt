@@ -84,7 +84,12 @@ class BienvenidaActivity : AppCompatActivity() {
 
         }
 
+        val imgDevolver = findViewById<ImageView>(R.id.btnBackBienvenida)
 
+        imgDevolver.setOnClickListener {
+            val lanzar = Intent(this, ConfiguraPerfilActivity::class.java)
+            startActivity(lanzar)
+        }
 
 
     }

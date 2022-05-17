@@ -9,7 +9,7 @@
     tools:context=".Lectura">
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackLectura"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginLeft="10dp"

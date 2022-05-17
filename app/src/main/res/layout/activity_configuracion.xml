@@ -8,7 +8,7 @@
     tools:context=".Configuracion">
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackConf"
         android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="50dp"

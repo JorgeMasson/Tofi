@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -35,6 +36,13 @@ class RecoveryActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"Ingresar datos",Toast.LENGTH_SHORT).show()
             }
+        }
+
+        val imgDevolver = findViewById<ImageView>(R.id.btnBackRec)
+
+        imgDevolver.setOnClickListener {
+            val lanzar = Intent(this, LoginActivity::class.java)
+            startActivity(lanzar)
         }
     }
 
