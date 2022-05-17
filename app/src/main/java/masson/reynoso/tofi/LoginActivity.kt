@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import masson.reynoso.tofi.databinding.ActivityLoginBinding
 
 
 class LoginActivity : AppCompatActivity() {
@@ -30,23 +31,11 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnInicio)
         val btnRegistro = findViewById<Button>(R.id.btnRegistro)
 
-        //////////////////////////////REMEMBERME////////////////////////////////////
-
-        // Recuperamos el contenido de los textField
-        val mName = findViewById<EditText>(R.id.inputUsuarioLogin)
-        val mCheckBox = findViewById<CheckBox>(R.id.btnRecordarUser)
-
-        val sp = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
-
-
-
-        ////////////////////////////////////////////////////////////////////////////
-
         btnLogin.setOnClickListener {
-            val lanzar = Intent(this, ProfilesActivity::class.java)
-            startActivity(lanzar)
+//            val lanzar = Intent(this, ProfilesActivity::class.java)
+//            startActivity(lanzar)
 
-//            valida_ingreso()
+            valida_ingreso()
         }
 
         btnRegistro.setOnClickListener {
@@ -65,11 +54,6 @@ class LoginActivity : AppCompatActivity() {
 
         var correo: String = et_correo.text.toString()
         var contra: String = et_contra.text.toString()
-
-        /////////////////////////////----------------REMEMBERME------------------/////////////////////////////
-
-
-        /////////////////////////////-----------------------------------/////////////////////////////
 
         if (!correo.isNullOrBlank() && !contra.isNullOrBlank()) {
             //ingresa a la Firebase
@@ -110,4 +94,16 @@ class LoginActivity : AppCompatActivity() {
         val lanzar = Intent(this, RecoveryActivity::class.java)
         startActivity(lanzar)
     }
+
+    override fun onStart() {
+
+        auth = FirebaseAuth.getInstance()
+//        val currentUser = auth.currentUser
+//        if(currentUser != null){
+//            val i = Intent(this@LoginActivity,LoginActivity::class.java)
+//            startActivity(i)
+//        }
+        super.onStart()
+    }
+
 }
