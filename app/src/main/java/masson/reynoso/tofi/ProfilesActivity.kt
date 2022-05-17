@@ -14,13 +14,19 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import masson.reynoso.tofi.ConfiguraPerfilActivity.Companion.iconos
 import masson.reynoso.tofi.LoginActivity.Companion.email
+import masson.reynoso.tofi.ui.inicio.InicioFragment
 import java.util.HashMap
+import kotlinx.android.synthetic.main.activity_profiles.*
 
 class ProfilesActivity : AppCompatActivity() {
 
     val fs = Firebase.firestore
     var pfs = ArrayList<Perfil>()
     var adaptador: PerfilAdapter? = null
+
+    companion object{
+        var perfilActivo: Perfil? = null
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,25 +46,29 @@ class ProfilesActivity : AppCompatActivity() {
                             var icono = perfil.get("icono").toString()
                             var edad = perfil.get("edad").toString()
                             var temas = perfil.get("temas")
+                            var libros = perfil.get("libros")
 
                             pfs.add(
                                 Perfil(
                                     nombre as String?,
                                     edad.toInt(),
                                     icono.toInt(),
-                                    temas as ArrayList<String>?
+                                    temas as ArrayList<String>?,
+                                    libros as ArrayList<Libro>?
                                 )
                             )
 
 
                         }
 
-                        pfs.add(Perfil("Agregar perfil",0,8,null))
+                        pfs.add(Perfil("Agregar perfil",0,8,null,null))
 
                         adaptador = PerfilAdapter(this, pfs)
                         gridPerfiles.adapter = adaptador
                     }
                 }
+
+                perfilActivo = adaptador!!.perfilSeleccionado()
             }
 
     }
@@ -67,6 +77,8 @@ class ProfilesActivity : AppCompatActivity() {
             var perfiles = ArrayList<Perfil>()
             var context: Context? = null
             var iconos = ArrayList<Int>()
+            var pf: Perfil? = null
+            var libros= ArrayList<Libro>()
 
             constructor(context: Context?, perfiles: ArrayList<Perfil>) {
                 this.context = context
@@ -106,11 +118,15 @@ class ProfilesActivity : AppCompatActivity() {
                 }
 
                 icono.setOnClickListener {
+                    pf = Perfil(perfil.nombre,perfil.edad,perfil.icono,perfil.temas,perfil.libros)
+
                     if(perfil.icono == 8){
                         var intent = Intent(context, ConfiguraPerfilActivity::class.java)
                         context!!.startActivity(intent)
                     } else{
                         var intent = Intent(context, Inicio::class.java)
+                        Toast.makeText(context , perfil.nombre , Toast.LENGTH_SHORT).show()
+                        intent.putExtra("nombre",perfil.nombre)
                         context!!.startActivity(intent)
                     }
                 }
@@ -118,7 +134,6 @@ class ProfilesActivity : AppCompatActivity() {
 
                 return vista
             }
-
             fun cargaIconos(){
                 iconos.add(R.drawable.icono1)
                 iconos.add(R.drawable.icono2)
@@ -129,6 +144,10 @@ class ProfilesActivity : AppCompatActivity() {
                 iconos.add(R.drawable.icono7)
                 iconos.add(R.drawable.icono8)
                 iconos.add(R.drawable.agregar)
+            }
+
+            fun perfilSeleccionado(): Perfil? {
+                return pf
             }
 
         }

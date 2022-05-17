@@ -30,11 +30,13 @@
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/bg_color.xml" value="0.267" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/borde_boton_redondo.xml" value="0.2125" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/borde_redondo.xml" value="0.2125" />
+        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/botonmorado.xml" value="0.295" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/botonperfil.xml" value="0.224" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/botonverde.xml" value="0.2125" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/busqueda.xml" value="0.3455" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/carta.xml" value="0.224" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/categoria.xml" value="0.224" />
+        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/categorias.xml" value="0.2255" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/cuadro_redondo_azul_claro.xml" value="0.267" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/degradado_azul.xml" value="0.1285" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/degradado_dorado.xml" value="0.3675" />
@@ -57,6 +59,7 @@
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.224" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/perfil.xml" value="0.224" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/portada.xml" value="0.1" />
+        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/prueba.xml" value="0.295" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/rectangulo_redondeado_verde.xml" value="0.267" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/drawable/verde_redondeado.xml" value="0.2125" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/activity_audio_lectura.xml" value="0.33" />
@@ -76,12 +79,13 @@
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/activity_recoverypass.xml" value="0.25" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/carta.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/categorias.xml" value="0.33" />
+        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/etiqueta_categoria.xml" value="0.67" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/fragment_actividades.xml" value="0.18181818181818182" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/fragment_biblioteca.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/fragment_buscar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/fragment_inicio.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/libro_biblioteca.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/libro_biblioteca.xml" value="0.67" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/perfil.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/portada_libro.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrea/Desktop/ASIGNACIONES/Sextosemestre/APLICACIONESWEB/novo/Tofi/app/src/main/res/layout/resultados_actvidades.xml" value="0.36666666666666664" />

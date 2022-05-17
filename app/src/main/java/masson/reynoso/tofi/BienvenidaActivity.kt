@@ -52,7 +52,7 @@ class BienvenidaActivity : AppCompatActivity() {
             var nombre = perfil!!.nombre
             var icono = perfil!!.icono
 
-            var pf = Perfil(nombre,edad,icono,temasSeleccionados)
+            var pf = Perfil(nombre,edad,icono,temasSeleccionados,null)
 
             if(!perfiles.contains(pf)){
                 perfiles.add(pf)
@@ -62,8 +62,8 @@ class BienvenidaActivity : AppCompatActivity() {
                 "usuario" to usuario,
                 "email" to email,
                 "contraseña" to contraseña,
-                "perfiles" to perfiles
-            )
+                "perfiles" to perfiles)
+
 
             fs.collection("users")
                 .add(user)

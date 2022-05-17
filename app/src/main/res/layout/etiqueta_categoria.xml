@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3pt">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/categorias">
+
+        <TextView
+            android:id="@+id/tv_categoria"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Novela"
+            android:textSize="15dp"
+            android:fontFamily="@font/nunito_blod"
+            android:textColor="#475B6A"
+            android:gravity="center"
+            android:src="@drawable/categorias"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+

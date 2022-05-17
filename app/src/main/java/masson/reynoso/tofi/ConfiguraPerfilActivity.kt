@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 
 class ConfiguraPerfilActivity : AppCompatActivity() {
 
@@ -73,7 +71,7 @@ class ConfiguraPerfilActivity : AppCompatActivity() {
 
         btnSiguiente.setOnClickListener{
 
-            perfil = Perfil(et_nombre.text.toString(),count,countIconos,null)
+            perfil = Perfil(et_nombre.text.toString(),count,countIconos,null,null)
 
             val lanzar = Intent(this, BienvenidaActivity:: class.java)
             startActivity(lanzar)

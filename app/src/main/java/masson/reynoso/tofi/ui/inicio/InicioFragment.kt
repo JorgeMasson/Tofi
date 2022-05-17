@@ -1,77 +1,88 @@
 package masson.reynoso.tofi.ui.inicio
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.GridView
-import android.widget.TextView
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import masson.reynoso.tofi.R
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import masson.reynoso.tofi.*
+import masson.reynoso.tofi.ProfilesActivity.Companion.perfilActivo
 import masson.reynoso.tofi.databinding.FragmentInicioBinding
+
+
 
 class InicioFragment : Fragment() {
 
     private var _binding: FragmentInicioBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     var adaptador: LibroAdapter? = null
 
+    var first = true
+
     companion object {
-        var libros = ArrayList<String>()
-        var first = true
+        var libros = ArrayList<Libro>()
+        var nombrePerfil = perfilActivo?.nombre
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val inicioViewModel =
-            ViewModelProvider(this).get(InicioViewModel::class.java)
-
+    override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        if (first) {
+            first = false
+        }
+
         (activity as AppCompatActivity).supportActionBar?.hide()
 
-        if(first){
-            fillLibros()
-            first= false
-        }
+        val fs = Firebase.firestore
+
+        fs.collection("libros").get()
+            .addOnSuccessListener { documents ->
+                for (document in documents) {
+                    var titulo = document.get("titulo")
+                    var descripcion = document.get("descripcion")
+                    var paginas = document.get("paginas").toString()
+                    var portada = document.get("portada").toString()
+                    var categorias = document.get("categorias")
+                    var autor = document.get("autor")
+
+                    var libro = Libro(
+                        titulo as String,
+                        descripcion as String,
+                        autor as String,
+                        paginas.toInt(),
+                        portada.toInt(),
+                        categorias as ArrayList<String>)
+
+                    if(!libros.contains(libro)){
+                        libros.add(libro)
+                    }
+
+                }
+            }
 
         adaptador = LibroAdapter(root.context, libros)
         val table : GridView = root.findViewById(R.id.grid_catalogo)
         table.adapter = adaptador
+
         return root
     }
 
-    fun fillLibros(){
-        libros.add("1")
-        libros.add("1")
-        libros.add("1")
-        libros.add("1")
-        libros.add("1")
-        libros.add("1")
-        libros.add("1")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
     class LibroAdapter : BaseAdapter {
-        var libros = ArrayList<String>()
+        var libros = ArrayList<Libro>()
         var context: Context?= null
+        var portadas = ArrayList<Int>()
 
-        constructor(context: Context, libros: ArrayList<String>){
+        constructor(context: Context, libros: ArrayList<Libro>){
             this.context = context
             this.libros = libros
         }
@@ -80,6 +91,24 @@ class InicioFragment : Fragment() {
             var libro = libros[p0]
             var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista = inflator.inflate(R.layout.portada_libro,null)
+
+            portadas()
+
+            var portada: ImageView = vista.findViewById(R.id.iv_portada_cuento)
+            portada.setImageResource(portadas.get(libro.portada))
+
+            portada.setOnClickListener{
+                var intent = Intent(context, InfoCuento::class.java)
+                intent.putExtra("titulo", libro.titulo)
+                intent.putExtra("portada", libro.portada)
+                intent.putExtra("autor", libro.autor)
+                intent.putExtra("descripcion", libro.descripcion)
+                intent.putExtra("categorias",libro.categorias)
+                intent.putExtra("paginas",libro.paginas)
+                intent.putExtra("nombre", perfilActivo?.nombre)
+                intent.putExtra("pos",p0)
+                context!!.startActivity(intent)
+            }
 
             return vista
         }
@@ -95,5 +124,16 @@ class InicioFragment : Fragment() {
         override fun getCount(): Int {
             return libros.size
         }
+
+        fun portadas(){
+            portadas.add(R.drawable.alicia)
+            portadas.add(R.drawable.caperucita)
+            portadas.add(R.drawable.castillos)
+            portadas.add(R.drawable.gigante)
+            portadas.add(R.drawable.jardin)
+            portadas.add(R.drawable.peterpan)
+            portadas.add(R.drawable.rapunzel)
+        }
+
     }
 }
