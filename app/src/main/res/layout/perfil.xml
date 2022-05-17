@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3pt">
+
+    <LinearLayout
+        android:id="@+id/fondo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@drawable/degradado_dorado">
+
+        <ImageView
+            android:id="@+id/iv_icono"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icono5"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_extrablod"
+        android:text="Carla"
+        android:textColor="@color/moradoOscuro"
+        android:textSize="25dp" />
+
+</LinearLayout>

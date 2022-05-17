@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993207404052",
+    "project_id": "tofi-f958d",
+    "storage_bucket": "tofi-f958d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993207404052:android:1453a958a85aadc1f3c901",
+        "android_client_info": {
+          "package_name": "masson.reynoso.tofi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993207404052-0nd871a0ggfuj1elkuhg2lolgjmnpbh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg7C62gMfmB_hCEMnPv0xZHpygndDDogY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993207404052-0nd871a0ggfuj1elkuhg2lolgjmnpbh6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
