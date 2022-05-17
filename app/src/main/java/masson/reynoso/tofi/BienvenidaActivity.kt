@@ -43,7 +43,6 @@ class BienvenidaActivity : AppCompatActivity() {
         gridTemas.adapter = adaptador
 
         temasSeleccionados = adaptador!!.obtenerTemasSeleccionados()
-        Toast.makeText(this, temasSeleccionados.toString(), Toast.LENGTH_SHORT).show()
 
         btnListo.setOnClickListener {
             var email = user!!.email
@@ -114,6 +113,7 @@ class BienvenidaActivity : AppCompatActivity() {
         temas.add(Tema("Videojuegos", R.drawable.videojuego, R.drawable.videojuego_select))
         temas.add(Tema("Musica", R.drawable.musica, R.drawable.musica_select))
         temas.add(Tema("Ciencia ficcion", R.drawable.cohete, R.drawable.cohete_select))
+
     }
 
 
