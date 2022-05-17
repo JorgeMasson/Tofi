@@ -9,7 +9,7 @@
     tools:context=".RecoveryActivity">
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackRec"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginLeft="10dp"

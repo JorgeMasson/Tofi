@@ -78,6 +78,13 @@ class ConfiguraPerfilActivity : AppCompatActivity() {
             val lanzar = Intent(this, BienvenidaActivity:: class.java)
             startActivity(lanzar)
         }
+
+        val imgDevolver = findViewById<ImageView>(R.id.btnBackConfP)
+
+        imgDevolver.setOnClickListener {
+            val lanzar = Intent(this, CreateaccActivity::class.java)
+            startActivity(lanzar)
+        }
     }
 
     fun cargaIconos(){

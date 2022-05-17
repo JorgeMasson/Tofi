@@ -3,10 +3,7 @@ package masson.reynoso.tofi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import masson.reynoso.tofi.RecoveryActivity.Companion.usuario
@@ -26,6 +23,13 @@ class RecoveryPassActivity : AppCompatActivity() {
 
         btnReestablecer.setOnClickListener{
 
+        }
+
+        val imgDevolver = findViewById<ImageView>(R.id.btnBackRecP)
+
+        imgDevolver.setOnClickListener {
+            val lanzar = Intent(this, RecoveryActivity::class.java)
+            startActivity(lanzar)
         }
 
     }
