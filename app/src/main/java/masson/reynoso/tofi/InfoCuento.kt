@@ -25,11 +25,10 @@ class InfoCuento : AppCompatActivity() {
 
     companion object{
         var librosAgregados = ArrayList<Libro>()
+        var pfs = ArrayList<Perfil>()
     }
 
     val fs = Firebase.firestore
-    var pfs = ArrayList<Perfil>()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -85,21 +84,45 @@ class InfoCuento : AppCompatActivity() {
                             var nombre = perfil.get("nombre")
                             var icono = perfil.get("icono").toString()
                             var edad = perfil.get("edad").toString()
-                            var temas = perfil.get("temas")
+                            var temas = perfil.get("temas") as ArrayList<String>?
                             var libros = perfil.get("libros")
 
-                            var pf = Perfil(nombre as String?, edad.toInt(), icono.toInt(), temas as ArrayList<String>?, libros as ArrayList<Libro>?)
+                            var pf = Perfil(nombre as String?, edad.toInt(), icono.toInt(), temas ,null)
+
+                            if(libros != null){
+                                for (libro in libros as ArrayList<Libro>) {
+                                    libro as HashMap<String, Any>
+                                    var titulo = libro.get("titulo")
+                                    var autor = libro.get("autor")
+                                    var portada = libro.get("portada").toString()
+                                    var paginas = libro.get("paginas").toString()
+                                    var descripcion = libro.get("descripcion")
+                                    var categorias = libro.get("categorias")
+
+                                    var lb = Libro(titulo as String,
+                                        descripcion as String,
+                                        autor as String, paginas.toInt(), portada.toInt(), categorias!! as ArrayList<String>
+                                    )
+
+                                    if(!librosAgregados.contains(lb)){
+                                        librosAgregados.add(lb)
+                                    }
+                                }
+                            }
 
                             if((nombre as String?).equals(pf.nombre)){
+                                Toast.makeText(this,"Entro"+ pf.nombre,Toast.LENGTH_SHORT).show()
                                 pf.libros = librosAgregados
                                 pfs.add(pf)
                                 fs.collection("users").document(document.id).update("perfiles",pfs)
-                            } else{
+                            }else{
+                            if(!pfs.contains(pf)){
                                 pfs.add(pf)
                             }
                         }
                     }
                 }
+            }
         }
 
         adaptador = CategoriasAdapter(this, categorias!!)

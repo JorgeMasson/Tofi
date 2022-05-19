@@ -18,7 +18,6 @@ class Inicio : AppCompatActivity() {
         binding = ActivityInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_inicio)
@@ -33,8 +32,6 @@ class Inicio : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         val bundle = intent.extras
-        var nombre = bundle?.getString("nombre")
-
 
     }
 }

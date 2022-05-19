@@ -28,10 +28,9 @@
             android:id="@+id/btnConfig"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="83dp"
-            android:src="@drawable/configmorado"
-            />
+            android:src="@drawable/configmorado" />
 
     </LinearLayout>
 
@@ -48,13 +47,36 @@
         android:background="@drawable/fondo"
         android:orientation="vertical">
 
-        <Button
+        <LinearLayout
             android:id="@+id/perfil"
             android:layout_width="182dp"
             android:layout_height="240dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            />
+            android:orientation="vertical"
+            android:background="@drawable/botonperfil">
+
+            <ImageView
+                android:id="@+id/iconoperfil"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icono8"
+                />
+
+            <TextView
+                android:id="@+id/nombrePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coco"
+                android:fontFamily="@font/nunito_extrablod"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,23 +84,63 @@
             android:orientation="horizontal"
             android:layout_marginTop="30dp">
 
-            <Button
+            <LinearLayout
                 android:id="@+id/medallas"
                 android:layout_width="135dp"
                 android:layout_height="180dp"
+                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                />
+                android:background="@drawable/degradado_dorado"
+                android:layout_marginLeft="60dp">
 
-            <Button
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/medallas"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medallas"
+                    android:fontFamily="@font/nunito_extrablod"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/coleccionables"
                 android:layout_width="135dp"
                 android:layout_height="180dp"
+                android:orientation="vertical"
                 android:layout_gravity="center"
+                android:background="@drawable/degradado_azuloscuro"
+                android:layout_marginLeft="40dp">
 
-                android:layout_marginLeft="30dp"
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/coleccionables"
+                    />
 
-               />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coleccionables"
+                    android:fontFamily="@font/nunito_extrablod"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
 
         </LinearLayout>
 

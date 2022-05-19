@@ -13,6 +13,7 @@ class ConfiguraPerfilActivity : AppCompatActivity() {
     companion object {
         var iconos = ArrayList<Int>()
         var perfil: Perfil? = null
+        var usuario: User? = null
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

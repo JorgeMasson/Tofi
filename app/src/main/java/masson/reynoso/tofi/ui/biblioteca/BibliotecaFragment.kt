@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import masson.reynoso.tofi.*
+import masson.reynoso.tofi.ProfilesActivity.Companion.perfilActivo
 import masson.reynoso.tofi.databinding.FragmentBibliotecaBinding
 import masson.reynoso.tofi.ui.inicio.InicioFragment
 import masson.reynoso.tofi.ui.inicio.InicioFragment.Companion.nombrePerfil
@@ -22,10 +23,7 @@ class BibliotecaFragment : Fragment() {
     private var _binding: FragmentBibliotecaBinding? = null
     var adaptador: BibliotecaFragment.LibroAdapter? = null
     val fs = Firebase.firestore
-
-    companion object{
-        var librosBiblioteca = ArrayList<Libro>()
-    }
+    var librosBiblioteca = ArrayList<Libro>()
 
     var first = true
     var nombre = nombrePerfil
@@ -55,28 +53,31 @@ class BibliotecaFragment : Fragment() {
                         var nombrepf = perfil.get("nombre")
                         var libros = perfil.get("libros")
 
-                        if("nunu".equals(nombrepf.toString())){
-                            for (libro in libros as ArrayList<Any>) {
-                                libro as HashMap<String, Any>
-                                var titulo = libro.get("titulo")
-                                var descripcion = libro.get("descripcion")
-                                var paginas = libro.get("paginas").toString()
-                                var portada = libro.get("portada").toString()
-                                var categorias = libro.get("categorias")
-                                var autor = libro.get("autor")
+                        if(perfilActivo?.nombre.equals(nombrepf.toString())){
 
-                                var libro = Libro(
-                                    titulo as String,
-                                    descripcion as String,
-                                    autor as String,
-                                    paginas.toInt(),
-                                    portada.toInt(),
-                                    categorias as ArrayList<String>)
+                            if(libros != null){
+                                for (libro in libros  as ArrayList<Any>){
+                                    libro as HashMap<String, Any>
+                                    var titulo = libro.get("titulo")
+                                    var descripcion = libro.get("descripcion")
+                                    var paginas = libro.get("paginas").toString()
+                                    var portada = libro.get("portada").toString()
+                                    var categorias = libro.get("categorias")
+                                    var autor = libro.get("autor")
 
-                                if(!librosBiblioteca.contains(libro)){
-                                    librosBiblioteca.add(libro)
+                                    var libro = Libro(
+                                        titulo as String,
+                                        descripcion as String,
+                                        autor as String,
+                                        paginas.toInt(),
+                                        portada.toInt(),
+                                        categorias as ArrayList<String>)
+
+                                    if(!librosBiblioteca.contains(libro)){
+                                        librosBiblioteca.add(libro)
+                                    }
+
                                 }
-
                             }
 
                             adaptador = LibroAdapter(root.context, librosBiblioteca)

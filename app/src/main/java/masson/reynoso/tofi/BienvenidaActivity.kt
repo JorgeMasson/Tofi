@@ -13,11 +13,14 @@ import android.view.ViewGroup
 import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import masson.reynoso.tofi.ConfiguraPerfilActivity.Companion.perfil
 import masson.reynoso.tofi.CreateaccActivity.Companion.user
+import masson.reynoso.tofi.LoginActivity.Companion.email
 import masson.reynoso.tofi.R.color.amarilloOscuro
+import java.util.HashMap
 
 class BienvenidaActivity : AppCompatActivity() {
 
@@ -39,15 +42,21 @@ class BienvenidaActivity : AppCompatActivity() {
 
         cargaTemas()
 
+        val bundle = intent.extras
+        var nombrePerfil = ""
+
+        if(bundle != null){
+            nombrePerfil = bundle.getString("nombrePerfil").toString()
+        }
+
+
         adaptador = TemaAdapter(this, temas)
         gridTemas.adapter = adaptador
 
         temasSeleccionados = adaptador!!.obtenerTemasSeleccionados()
 
         btnListo.setOnClickListener {
-            var email = user!!.email
-            var contraseña = user!!.contraseña
-            var usuario = user?.usuario
+
             var edad = perfil!!.edad
             var nombre = perfil!!.nombre
             var icono = perfil!!.icono
@@ -58,30 +67,44 @@ class BienvenidaActivity : AppCompatActivity() {
                 perfiles.add(pf)
             }
 
-            val user = hashMapOf(
-                "usuario" to usuario,
-                "email" to email,
-                "contraseña" to contraseña,
-                "perfiles" to perfiles)
+            if(user != null){
+                var correo = user!!.email
+                var contraseña = user!!.contraseña
+                var usuario = user?.usuario
+
+                val user = hashMapOf(
+                    "usuario" to usuario,
+                    "email" to email,
+                    "contraseña" to contraseña,
+                    "perfiles" to perfiles)
 
 
-            fs.collection("users")
-                .add(user)
-                .addOnSuccessListener { documentReference ->
-                    Log.d(
-                        ContentValues.TAG,
-                        "DocumentSnapshot added with ID: ${documentReference.id}"
-                    )
-                }
-                .addOnFailureListener { e ->
-                    Log.w(ContentValues.TAG, "Error adding document", e)
-                }
+                fs.collection("users")
+                    .add(user)
+                    .addOnSuccessListener { documentReference ->
+                        Log.d(
+                            ContentValues.TAG,
+                            "DocumentSnapshot added with ID: ${documentReference.id}"
+                        )
+                    }
+                    .addOnFailureListener { e ->
+                        Log.w(ContentValues.TAG, "Error adding document", e)
+                    }
 
-            registrarFireBase(email, contraseña)
+                registrarFireBase(correo, contraseña)
 
-            val lanzar = Intent(this, Inicio:: class.java)
+            } else {
+                var correo = email
+                fs.collection("users").whereEqualTo("email", email).get()
+                    .addOnSuccessListener { documents ->
+                        for (document in documents) {
+                            fs.collection("users").document(document.id).update("perfiles",FieldValue.arrayUnion(pf))
+                        }
+                    }
+            }
+
+            val lanzar = Intent(this, ProfilesActivity:: class.java)
             startActivity(lanzar)
-
         }
 
         val imgDevolver = findViewById<ImageView>(R.id.btnBackBienvenida)

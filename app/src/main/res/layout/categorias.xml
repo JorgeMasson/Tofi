@@ -12,13 +12,15 @@
         android:background="@drawable/categoria">
 
         <ImageView
-            android:id="@+id/portada_libro"
+            android:id="@+id/iv_categoria"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:src="@drawable/portada"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aventura"
             />
 
         <TextView
+            android:id="@+id/tv_categoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Categoría"

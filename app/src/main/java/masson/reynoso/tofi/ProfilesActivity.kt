@@ -67,8 +67,6 @@ class ProfilesActivity : AppCompatActivity() {
                         gridPerfiles.adapter = adaptador
                     }
                 }
-
-                perfilActivo = adaptador!!.perfilSeleccionado()
             }
 
     }
@@ -109,6 +107,7 @@ class ProfilesActivity : AppCompatActivity() {
 
                 cargaIconos()
 
+
                 nombre.setText(perfil.nombre)
                 icono.setImageResource(iconos.get(perfil.icono))
 
@@ -119,13 +118,14 @@ class ProfilesActivity : AppCompatActivity() {
 
                 icono.setOnClickListener {
                     pf = Perfil(perfil.nombre,perfil.edad,perfil.icono,perfil.temas,perfil.libros)
-
+                    perfilActivo = pf
                     if(perfil.icono == 8){
                         var intent = Intent(context, ConfiguraPerfilActivity::class.java)
+                        intent.putExtra("email",email)
+                        intent.putExtra("email",email)
                         context!!.startActivity(intent)
                     } else{
                         var intent = Intent(context, Inicio::class.java)
-                        Toast.makeText(context , perfil.nombre , Toast.LENGTH_SHORT).show()
                         intent.putExtra("nombre",perfil.nombre)
                         context!!.startActivity(intent)
                     }
